@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Persian and RTL support",
+    "description": "Renders Persian with the Vazirmatn font and gives every paragraph its own direction, so Persian reads right to left and English left to right in chats, the composer and inputs; code stays left to right."
+  }
+}

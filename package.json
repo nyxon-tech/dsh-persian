@@ -1,0 +1,47 @@
+{
+  "name": "@nyxon-tech/dsh-persian",
+  "version": "1.0.0",
+  "description": "Persian and right-to-left support for the DSH Web UI: Vazirmatn for Persian script and per-paragraph text direction.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "author": "Nyxon (https://github.com/nyxon-tech)",
+  "homepage": "https://github.com/nyxon-tech/dsh-persian#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyxon-tech/dsh-persian.git"
+  },
+  "bugs": "https://github.com/nyxon-tech/dsh-persian/issues",
+  "keywords": ["deepseek-harness", "dsh", "dsh-plugin", "persian", "farsi", "rtl", "bidi", "vazirmatn"],
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets/Vazirmatn-OFL.txt",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-theme",
+        "@deepseek-ai/dsh-client-ui-chat",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}
