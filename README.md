@@ -30,13 +30,14 @@
 
 ### نصب
 
-**راه ساده:** در یک گفتگوی DSH از عامل بخواهید:
+**راه ساده:** در یک گفتگوی DSH این را برای عامل بفرستید:
 
 ```text
-باندل DSH با مشخصهٔ github:nyxon-tech/dsh-persian را با Plugin Manager نصب کن.
+این باندل DSH را با Plugin Manager نصب کن:
+https://github.com/nyxon-tech/dsh-persian/archive/refs/tags/v1.0.0.tar.gz
 ```
 
-عامل ابزار `plugin_manager` را با `install_bundle` و هدف `github:nyxon-tech/dsh-persian` اجرا می‌کند (نیاز به تأیید شما دارد). بعد از نصب، صفحهٔ DSH را یک بار رفرش کنید.
+عامل ابزار `plugin_manager` را با `install_bundle` و همین آدرس اجرا می‌کند (نیاز به تأیید شما دارد) و به git نیازی نیست. بعد از نصب، صفحهٔ DSH را یک بار رفرش کنید. برای نسخه‌های بعدی، آدرس آخرین [ریلیز](https://github.com/nyxon-tech/dsh-persian/releases) را بدهید.
 
 **از روی سورس:** مخزن را کلون کنید و از عامل بخواهید پوشه را نصب کند:
 
@@ -81,14 +82,16 @@ A DeepSeek Harness plugin that makes Persian (and other Arabic-script text) read
 
 ### Install
 
-**Quick:** ask the agent in any DSH conversation:
+**Quick:** send this to the agent in any DSH conversation:
 
 ```text
-Install the DSH bundle github:nyxon-tech/dsh-persian with the Plugin Manager.
+Install this DSH bundle with the Plugin Manager:
+https://github.com/nyxon-tech/dsh-persian/archive/refs/tags/v1.0.0.tar.gz
 ```
 
-The agent calls `plugin_manager` with `install_bundle` and the target `github:nyxon-tech/dsh-persian` (you approve it).
-Refresh the DSH page once afterwards.
+The agent calls `plugin_manager` with `install_bundle` and that URL (you approve it); git is not required. Refresh the
+DSH page once afterwards. For later versions, use the archive URL of the latest
+[release](https://github.com/nyxon-tech/dsh-persian/releases).
 
 **From source:** clone the repository and ask the agent to install the folder:
 
